@@ -5,6 +5,12 @@ public class CurrencyModal {
     private String symbol;
     private double price;
 
+    public CurrencyModal(String name, String symbol, double price) {
+        this.name = name;
+        this.symbol = symbol;
+        this.price = price;
+    }
+
     public String getName() {
         return name;
     }

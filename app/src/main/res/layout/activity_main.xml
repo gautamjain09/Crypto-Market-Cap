@@ -7,26 +7,42 @@
     android:background="@color/Default1Dark"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/EditTextSearch"
+    <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search Currency"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/WhiteShade"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textAlignment="center">
-    </EditText>
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_search">
+        </ImageView>
+
+        <EditText
+            android:id="@+id/EditTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Search Currency"
+            android:textColor="@color/white"
+            android:textColorHint="@color/WhiteShade"
+            android:textSize="16sp">
+        </EditText>
+
+    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/EditTextSearch">
+        android:layout_below="@+id/linear_layout">
     </androidx.recyclerview.widget.RecyclerView>
 
     <ProgressBar
