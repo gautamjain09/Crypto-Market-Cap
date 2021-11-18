@@ -34,7 +34,9 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editText;
+
     private ProgressBar progressBar;
+
     private RecyclerView recyclerView;
     private ArrayList<CurrencyModal> arraylist;
     private CurrencyAdapter currencyAdapter;
